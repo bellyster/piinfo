@@ -23,15 +23,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.handlebars" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Prototipo/views/test.handlebars">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="material.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Prototipo/views/material.handlebars">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,14 +59,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/Projectos/Prototipo/node_modules/body-parser/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Prototipo/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -131,7 +131,6 @@
         <option value="$PROJECT_DIR$/Prototipo/views/home.handlebars" />
         <option value="$PROJECT_DIR$/Prototipo/views/historia2.handlebars" />
         <option value="$PROJECT_DIR$/Prototipo/views/historia1.handlebars" />
-        <option value="$PROJECT_DIR$/Prototipo/app.js" />
         <option value="$PROJECT_DIR$/Prototipo/views/test.handlebars" />
         <option value="$PROJECT_DIR$/Prototipo/views/test2.handlebars" />
         <option value="$PROJECT_DIR$/Prototipo/views/test1.handlebars" />
@@ -141,6 +140,8 @@
         <option value="$PROJECT_DIR$/Prototipo/views/partials/busqueda.handlebars" />
         <option value="$PROJECT_DIR$/Prototipo/views/partials/ads.handlebars" />
         <option value="$PROJECT_DIR$/Prototipo/views/bbs.handlebars" />
+        <option value="$PROJECT_DIR$/Prototipo/.gitnore" />
+        <option value="$PROJECT_DIR$/Prototipo/app.js" />
       </list>
     </option>
   </component>
@@ -180,32 +181,6 @@
               <item name="PIINFO PROTOTIPO" type="b2602c69:ProjectViewProjectNode" />
               <item name="PIINFO PROTOTIPO" type="462c0819:PsiDirectoryNode" />
               <item name="Prototipo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIINFO PROTOTIPO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIINFO PROTOTIPO" type="462c0819:PsiDirectoryNode" />
-              <item name="Prototipo" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIINFO PROTOTIPO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIINFO PROTOTIPO" type="462c0819:PsiDirectoryNode" />
-              <item name="Prototipo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIINFO PROTOTIPO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIINFO PROTOTIPO" type="462c0819:PsiDirectoryNode" />
-              <item name="Prototipo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIINFO PROTOTIPO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIINFO PROTOTIPO" type="462c0819:PsiDirectoryNode" />
-              <item name="Prototipo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -266,18 +241,18 @@
       <workItem from="1535495842956" duration="10702000" />
       <workItem from="1535763749793" duration="1199000" />
       <workItem from="1536065385784" duration="618000" />
-      <workItem from="1536261994096" duration="599000" />
+      <workItem from="1536261994096" duration="1530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90166000" />
+    <option name="totallyTimeSpent" value="91097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="697" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.11859444" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09251101" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -303,20 +278,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Prototipo/views/home.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2108">
-          <caret line="124" column="22" lean-forward="true" selection-start-line="78" selection-start-column="16" selection-end-line="124" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Prototipo/views/historia1.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Prototipo/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
@@ -547,13 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Prototipo/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="60" column="3" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Prototipo/views/test2.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -635,6 +589,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
           <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Projectos/Prototipo/node_modules/body-parser/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
         </state>
       </provider>
     </entry>

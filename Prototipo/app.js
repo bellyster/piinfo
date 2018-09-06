@@ -23,7 +23,7 @@ app.use(express.static(__dirname +'/public'));
 
 app.get('/', function(req, res){
     //El status marca como activa la pagina.
-    res.render('home', {statusViewH:"active", username: "Antonio Salieri"},);
+    res.render('home', {statusViewH:"active", username: "Antonio Salieri"});
 });
 
 app.get('/about', function(req, res){
