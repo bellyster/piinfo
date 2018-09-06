@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- References a Handlebars partial in views/partials/head.handlebars -->
+    {{>head}}
+
+    <title>Express Tutorial</title>
+</head>
+
+<body>
+
+<!-- References a Handlebars partial in views/partials/bsnavbar.handlebars -->
+{{>nav}}
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        {{>sidebar}}
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            {{{body}}}
+        </div>
+        {{>footer}}
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="./vendor/jquery/jquery.min.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#wrapper").toggleClass("toggled");
+</script>
+
+
+
+
+<link href="./simple-sidebar.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./main.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

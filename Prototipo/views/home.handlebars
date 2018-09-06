@@ -1,0 +1,188 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" type="text/javascript"></script>
+
+
+<div class="row" >
+    <div class="col-md-9">
+
+        <div class="container-fluid">
+
+
+            <form method="post">
+                <textarea id="summernote" name="editordata"></textarea>
+                <input id="btnSave" class="btn" type="button" onclick="save()" value="Save" />
+            </form>
+            <div id="posts">
+                <div id="NewPost"  class="row">
+                    <div class="col-sm-2">
+                        <img src="./img/user1.png" class="img-circle" style="width: 80px; height: 80px">
+                    </div>
+                    <div class="panel panel-default col-sm-10" style="padding:0;">
+                        <div class="panel-heading">{{username}}</div>
+                        <div class="panel-body">
+                            text
+                        </div>
+                        <div class="bottompanel  text-center pt-3" style="margin-bottom: 0px;">
+                            <ul class="list-unstyled list-inline font-small" style="margin-bottom: 0px; padding-bottom: 0px;">
+                                <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>date</li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text">0 <span class="glyphicon glyphicon-comment" style="padding-top: 2px;"></span></a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text">0 <span class="glyphicon glyphicon-thumbs-up" style="padding-top: 2px;"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.getElementById("NewPost").style.display = "none";
+
+                $('#summernote').summernote({
+                    toolbar: [
+                        // [groupName, [list of button]]
+                        ['style', ['bold', 'italic', 'underline', 'clear']],
+                        ['color', ['color']],
+                        ['para', ['ul', 'ol', 'paragraph']],
+                        ['height', ['height']]
+                    ],
+                    disableDragAndDrop: true
+                });
+                var i=0;
+
+                function save() {
+                    console.log("guardando texto");
+                    var markupStr = document.getElementById("summernote").value;
+                    if(markupStr!=""){
+                        //duplicar el nodo de post
+                        var original = document.getElementById('NewPost');
+                        var clone = original.cloneNode(true);
+                        clone.id = "NewPost" + ++i;
+                        //INSERTAR POST EN EL MURO
+                        document.getElementById("posts").appendChild(clone);
+                        //INSERTAR TEXTO DEL POST
+                        document.getElementById(clone.id).getElementsByTagName("DIV")[3].innerHTML=markupStr;
+                        var d = new Date();
+                        document.getElementById(clone.id).getElementsByTagName("LI")[0].innerHTML=d.toString();
+                        console.log(d.toString());
+                        document.getElementById(clone.id).style.display = "block";
+                        //GUARDAR POST EN LOS POSTS
+
+                    }
+
+                }
+
+
+            </script>
+
+            </br></br>
+            <div id="historias">
+                <div id="NewPost"  class="row">
+                    <div class="col-sm-2">
+                        <img src="./img/user1.png" class="img-circle" style="width: 80px; height: 80px">
+                    </div>
+                    <div class="panel panel-default col-sm-10" style="padding:0;">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h4>{{username}}</h4>
+                                </div>
+                                <div class="col-md-3 " style="text-align: center">
+
+                                    <p style="color:red; padding-top: 10px; padding-bottom: 0px;" class="align-middle"><a>Denunciar <span class="glyphicon glyphicon-remove-sign" style="color:red; padding-top: 3px;"></span></a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="panel-body" >
+                            <div class="card-body">
+                                <!-- Button -->
+                                <!-- Title -->
+                                <h4 class="card-title">Ataques de Pánico</h4>
+
+                                <hr>
+                                <!-- Text -->
+                                <div class="descripción" style="padding-bottom: 0px;">
+                                    <p class="card-text">
+                                       <i> Tres epifanías se abrieron camino ante mi psique... y cambiaron las reglas del juego
+                                       </i>
+                                    </p></br>
+                                    <p>
+                                        Con 12 años tuve mi primer ataque de pánico. Las manos sudorosas, el corazón desbocado, los temblores y la sensación que todo a mi alrededor se desvanecía; no tenía ni idea de lo que me estaba sucediendo. Solo sabía que no podía controlar mi cuerpo. Era puro terror. Fui a ver a médicos, pasé por una serie de pruebas y me dieron el visto bueno. Aunque aliviada tras saber que no tenía ningún problema médico, vivía con el miedo de que fuera a suceder de nuevo...
+                                    </p>
+                                </div>
+                                <p style="text-align: right; color:#2196F3 "><a href="/his2"> Ver más...</a></p>
+                            </div>
+                        </div>
+
+                        <div class="bottompanel  text-center pt-3" style="margin-bottom: 0px;">
+                            <ul class="list-unstyled list-inline font-small" style="margin-bottom: 0px; padding-bottom: 0px;">
+                                <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>05/10/2015</li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text">12 <span class="glyphicon glyphicon-comment" style="padding-top: 2px;"></span></a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text">15  <span class="glyphicon glyphicon-thumbs-up" style="padding-top: 2px;"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="NewPost"  class="row">
+                    <div class="col-sm-2">
+                        <img src="./img/user2.png" class="img-circle" style="width: 80px; height: 80px">
+                    </div>
+                    <div class="panel panel-default col-sm-10" style="padding:0;">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h4>Amadeus Mozart</h4>
+                                </div>
+                                <div class="col-md-3 " style="text-align: center">
+
+                                    <p style="color:red; padding-top: 10px; padding-bottom: 0px;" class="align-middle"><a>Denunciar <span class="glyphicon glyphicon-remove-sign" style="color:red; padding-top: 3px;"></span></a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="panel-body" >
+                            <div class="card-body">
+                                <!-- Button -->
+                                <!-- Title -->
+                                <h4 class="card-title">Mis padres me sobre exigen demasiado</h4>
+
+                                <hr>
+                                <!-- Text -->
+                                <div class="descripción" style="padding-bottom: 0px;">
+                                    <p class="card-text">
+                                        <i> Tres epifanías se abrieron camino ante mi psique... y cambiaron las reglas del juego
+                                        </i>
+                                    </p></br>
+                                    <p>
+                                        Con 12 años tuve mi primer ataque de pánico. Las manos sudorosas, el corazón desbocado, los temblores y la sensación que todo a mi alrededor se desvanecía; no tenía ni idea de lo que me estaba sucediendo. Solo sabía que no podía controlar mi cuerpo. Era puro terror. Fui a ver a médicos, pasé por una serie de pruebas y me dieron el visto bueno. Aunque aliviada tras saber que no tenía ningún problema médico, vivía con el miedo de que fuera a suceder de nuevo...
+                                    </p>
+                                </div>
+                                <p style="text-align: right; color:#2196F3 "><a href="/his1"> Ver más...</a></p>
+                            </div>
+                        </div>
+
+                        <div class="bottompanel  text-center pt-3" style="margin-bottom: 0px;">
+                            <ul class="list-unstyled list-inline font-small" style="margin-bottom: 0px; padding-bottom: 0px;">
+                                <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>05/10/2015</li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text">12 <span class="glyphicon glyphicon-comment" style="padding-top: 2px;"></span></a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text">15  <span class="glyphicon glyphicon-thumbs-up" style="padding-top: 2px;"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!--/span-->
+    <div class="col-md-3">
+        {{>busqueda}}
+
+        {{>ads}}
+    </div>
+</div>
+
+

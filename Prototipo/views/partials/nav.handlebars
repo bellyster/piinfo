@@ -1,0 +1,45 @@
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="pull-left" href="#"><img src="/img/miniLogo1.png" style="padding-left: 5px;"></a>
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <form class="navbar-form navbar-left">
+                    <div class="input-group input-group-sm" style="max-width:800px; padding-top: 3px;">
+                        <input type="text"  class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                        <div class="input-group-btn" style="padding-top: 0px; margin-top: 0px;">
+                            <button class="btn btn-default" style="padding-top: 0px; margin-top: 0px;"  type="submit"><i class="glyphicon glyphicon-search" style="padding-top: 8px;" ></i></button>
+                        </div>
+                    </div>
+                </form>
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="{{statusViewH}}"> <a href="/">Home </a></li>
+                    <li class="{{statusViewA}}"><a href="/about">About</a></li>
+                    <li class="{{statusViewU}}"><a href="/inbox">Inbox</a></li>
+                    <li class="d-inline-block "><div class="d-inline-block ">
+                        <a  href="/perfil"><img src="/img/user1.png" style="padding-left: 5px; padding-top:5px; padding-right: 20px; width:65px; height:45px; "></a>
+                        <span class="navbar-text" style="padding-top: 2px">
+                            {{username}}
+                        </span>
+                    </div>
+                    </li>
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container-fluid -->
+    </nav>
+
